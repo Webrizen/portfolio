@@ -95,10 +95,9 @@ body::-webkit-scrollbar-thumb {
   backdrop-filter: blur(90px);
   border: 0.1px solid rgba(192, 192, 192, 0.504);
   border-radius: 35px;
-  left: 0;
-  right: 0;
-  margin: 10px auto;
-  z-index: 999;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,4 +110,12 @@ body::-webkit-scrollbar-thumb {
   background: rgba(225, 225, 225, 0.3);
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  .ico{
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    margin: 10px auto;
+  }
+}
