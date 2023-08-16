@@ -1,0 +1,226 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 40px 10px;
+    height: auto;
+}
+
+.chip {
+    padding: 10px 20px;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(90px);
+    border: 0.1px solid rgba(192, 192, 192, 0.504);
+    white-space: nowrap;
+    width: min-content;
+    font-size: 14px;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.servicesh2 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    text-align: center;
+}
+
+.servicesp {
+    text-align: center;
+    width: 60%;
+}
+
+.threecol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 80%;
+    margin: 10px auto;
+    margin-top: 80px;
+}
+
+.threecol .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(90px);
+    border: 0.1px solid rgba(192, 192, 192, 0.504);
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 60px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.threecol .card:hover {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(5deg) scale(1.05);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.threecol .card:hover .ico-card{
+    left: -10%;
+    right: 0;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.threecol .card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    animation: borderPulse 2s infinite;
+}
+
+.threecol .card .ico-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 0.1px solid rgba(192, 192, 192, 0.504);
+    padding: 10px;
+   border-radius: 10px;
+   position: absolute;
+   top: -10%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+}
+
+.threecol .card .ico-card:nth-child(1){
+    background: #2a62d334;
+}
+
+.threecol .card .ico-card:nth-child(2){
+    background: #e09b3b7a;
+}
+
+.threecol .card .ico-card:nth-child(3){
+    background: linear-gradient(90deg, #e09b3b7a, rgba(255, 0, 0, 0.286));
+}
+
+.threecol .card .ico-card img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes borderPulse {
+
+    0%,
+    100% {
+        border-color: #f39c12;
+    }
+
+    50% {
+        border-color: #3498db;
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.threecol .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .leftHero {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .leftHero h1 {
+        font-size: 2rem;
+    }
+
+    .rightHero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .servicesp {
+        width: 100%;
+    }
+
+    .threecol {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0;
+        gap: 70px;
+    }
+
+    .chip {
+        font-size: 10px;
+    }
+    .twocol{
+        grid-template-columns: 1fr;
+    }
+    .clients{
+        max-width: 100%;
+    }
+    .leftHero p li{
+        justify-content: center;
+    }
+}

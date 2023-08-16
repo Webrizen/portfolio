@@ -64,10 +64,6 @@ select {
   white-space: nowrap;
 }
 
-ul {
-  list-style: none;
-}
-
 /* ===== Scrollbar CSS ===== */
 
 /* Firefox */
@@ -97,7 +93,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 10px;
   background: rgba(225, 225, 225, 0.1);
   backdrop-filter: blur(90px);
-  border: 0.1px solid rgba(225, 225, 225, 0.1);
+  border: 0.1px solid rgba(192, 192, 192, 0.504);
   border-radius: 35px;
   left: 0;
   right: 0;
