@@ -56,3 +56,40 @@ const themeIcon = document.getElementById("theme");
     }
     
     themeIcon.addEventListener("click", toggleTheme);
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const timelineCards = document.querySelectorAll(".timeline-card");
+      const projectImage = document.getElementById("projectImage");
+  
+      const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5
+      };
+  
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              const card = entry.target;
+              if (entry.isIntersecting) {
+                  const newImageSrc = card.getAttribute("data-image-src");
+                  if (newImageSrc) {
+                      projectImage.src = newImageSrc;
+                  }
+                  const icon = card.querySelector(".timeline-icon i");
+                  if (icon) {
+                      icon.style.color = "blue";
+                  }
+              } else {
+                  const icon = card.querySelector(".timeline-icon i");
+                  if (icon) {
+                      icon.style.color = ""; // Reset to default color
+                  }
+              }
+          });
+      }, observerOptions);
+  
+      timelineCards.forEach(card => {
+          observer.observe(card);
+      });
+  });
+  

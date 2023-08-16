@@ -28,7 +28,7 @@ header{
     color: #eee;
 }
 .dynamic-island a:hover{
-    color: rgba(132, 113, 113, 0.522);
+    color: #eeeeeec1;
 }
 @media (max-width: 768px) {
     header{
