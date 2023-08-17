@@ -93,3 +93,6 @@ const themeIcon = document.getElementById("theme");
       });
   });
   
+
+  document.getElementById('year').innerHTML = new Date().getFullYear();
+  document.getElementById('year-next').innerHTML = new Date().getFullYear();

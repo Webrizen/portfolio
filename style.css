@@ -62,6 +62,13 @@ select {
   background: initial;
   width: 100%;
   white-space: nowrap;
+  color: #1f1f1f;
+}
+
+.dark-theme input,
+.dark-theme textarea,
+.dark-theme select{
+  color: #f1f1f1;
 }
 
 /* ===== Scrollbar CSS ===== */

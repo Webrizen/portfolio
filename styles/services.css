@@ -41,7 +41,7 @@
 .threecol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     max-width: 80%;
     margin: 10px auto;
     margin-top: 80px;
