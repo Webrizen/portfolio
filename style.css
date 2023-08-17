@@ -7,6 +7,39 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-family: 'Poppins', sans-serif;
+  cursor: none;
+}
+
+.cursor-circle {
+  position: fixed;
+  border: 2px solid rgba(192, 192, 192, 0.504);
+  background: rgba(225, 225, 225, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+.big-cursor {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.5s ease;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 html,
@@ -67,7 +100,7 @@ select {
 
 .dark-theme input,
 .dark-theme textarea,
-.dark-theme select{
+.dark-theme select {
   color: #f1f1f1;
 }
 
@@ -117,8 +150,30 @@ body::-webkit-scrollbar-thumb {
   background: rgba(225, 225, 225, 0.3);
 }
 
+.scroll-to-top{
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 10px;
+  background: rgba(225, 225, 225, 0.1);
+  backdrop-filter: blur(90px);
+  border: 0.1px solid rgba(192, 192, 192, 0.504);
+  border-radius: 35px;
+  right: 10px;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.scroll-to-top:hover {
+  background: rgba(225, 225, 225, 0.3);
+}
+
 @media only screen and (max-width: 768px) {
-  .ico{
+  .ico {
     left: 0;
     right: 0;
     top: auto;

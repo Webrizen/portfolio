@@ -111,3 +111,37 @@ function onScroll(){
     timelineHeader.style.top = 0;
   }
 }
+
+const scrollToTopBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        scrollToTopBtn.style.display = "flex";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cursor = document.createElement("div");
+  cursor.classList.add("cursor-circle");
+  cursor.classList.add("big-cursor");
+  document.body.appendChild(cursor);
+
+  const smallCursor = document.createElement("div");
+  smallCursor.classList.add("cursor-circle");
+  document.body.appendChild(smallCursor);
+
+  document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX - cursor.clientWidth / 2 + "px";
+      cursor.style.top = e.clientY - cursor.clientHeight / 2 + "px";
+
+      smallCursor.style.left = e.clientX - smallCursor.clientWidth / 2 + "px";
+      smallCursor.style.top = e.clientY - smallCursor.clientHeight / 2 + "px";
+  });
+});

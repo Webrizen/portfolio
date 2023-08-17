@@ -11,6 +11,9 @@
     background-color: linear-gradient(180deg, navy, rgb(30, 30, 220), white);
     color: #f1f1f1f1;
     position: relative;
+    opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1s forwards;
 }
 
 .hero-two-col{

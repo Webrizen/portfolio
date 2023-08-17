@@ -227,7 +227,11 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
     }
 
     .timeline {
-        grid-template-columns: 1fr;
+        flex-direction: row;
+    }
+
+    .left-content-timeline{
+        width: 100%;
     }
 
     .left-content-timeline .timeline-card {
