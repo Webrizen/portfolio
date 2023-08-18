@@ -149,3 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
       smallCursor.style.top = e.clientY - smallCursor.clientHeight / 2 + "px";
   });
 });
+
+const flyingImage = document.querySelector('.objects');
+    setTimeout(() => {
+      flyingImage.classList.remove('into-ani');
+    }, 1500);

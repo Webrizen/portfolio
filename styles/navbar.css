@@ -13,6 +13,7 @@ header{
     padding: 15px;
     background: rgba(225,225,225,0.1);
     backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
     border: 0.1px solid rgba(192, 192, 192, 0.504);
     border-radius: 35px;
     white-space: nowrap;

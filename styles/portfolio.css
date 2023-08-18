@@ -125,6 +125,7 @@
     border: 0.1px solid rgba(192, 192, 192, 0.504);
     background: rgba(225, 225, 225, 0.1);
     backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
     font-size: 8rem;
     cursor: pointer;
 }
@@ -203,6 +204,7 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
     border: 0.1px solid rgba(192, 192, 192, 0.504);
     background: rgba(225, 225, 225, 0.1);
     backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
     padding: 20px;
 }
 

@@ -30,6 +30,17 @@
   transition: transform 0.5s ease;
 }
 
+@keyframes flyIn {
+  0% {
+    transform: translateY(-1000px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -40,6 +51,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.into-ani{
+  animation: flyIn 1s forwards !important;
 }
 
 html,
@@ -133,6 +148,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 10px;
   background: rgba(225, 225, 225, 0.1);
   backdrop-filter: blur(90px);
+  -webkit-backdrop-filter: blur(90px);
   border: 0.1px solid rgba(192, 192, 192, 0.504);
   border-radius: 35px;
   top: 10px;
@@ -157,6 +173,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 10px;
   background: rgba(225, 225, 225, 0.1);
   backdrop-filter: blur(90px);
+  -webkit-backdrop-filter: blur(90px);
   border: 0.1px solid rgba(192, 192, 192, 0.504);
   border-radius: 35px;
   right: 10px;
