@@ -1,199 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Global Changes  -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Portfolio</title>
-    <!-- Navbar CSS  -->
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <!-- Home CSS(Hero Section)  -->
-    <link rel="stylesheet" href="/styles/home.css" />
-    <!-- Reviews Section CSS  -->
-    <link rel="stylesheet" href="/styles/reviews.css" />
-    <!-- services Section CSS  -->
-    <link rel="stylesheet" href="/styles//services.css" />
-    <!-- portfolio Section CSS  -->
-    <link rel="stylesheet" href="/styles/portfolio.css" />
-    <!-- contact Section CSS  -->
-    <link rel="stylesheet" href="/styles/contact.css" />
-    <!-- footer Section CSS  -->
-    <link rel="stylesheet" href="/styles/footer.css" />
-  </head>
-  <body>
-    <!-- Navbar  -->
-    <header>
-      <div
-        class="dynamic-island"
-        data-tilt
-        data-tilt-max="10"
-        data-tilt-speed="400"
-        data-tilt-perspective="1000"
-      >
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-    </header>
-    <!-- Navbar  -->
-    <!-- Toggle Theme  -->
-    <div class="ico" id="theme">
-      <i class="bx bxs-sun"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Global Changes  -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Portfolio</title>
+  <!-- Navbar CSS  -->
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <!-- Home CSS(Hero Section)  -->
+  <link rel="stylesheet" href="/styles/home.css" />
+  <!-- Reviews Section CSS  -->
+  <link rel="stylesheet" href="/styles/reviews.css" />
+  <!-- services Section CSS  -->
+  <link rel="stylesheet" href="/styles//services.css" />
+  <!-- portfolio Section CSS  -->
+  <link rel="stylesheet" href="/styles/portfolio.css" />
+  <!-- contact Section CSS  -->
+  <link rel="stylesheet" href="/styles/contact.css" />
+  <!-- footer Section CSS  -->
+  <link rel="stylesheet" href="/styles/footer.css" />
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <header>
+    <div class="dynamic-island" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
-    <!-- Toggle Theme  -->
-    <!-- Scroll To Top Button  -->
-    <div class="scroll-to-top" id="scrollToTop">
-      <i class='bx bxs-chevron-up'></i>
+  </header>
+  <!-- Navbar  -->
+  <!-- Toggle Theme  -->
+  <div class="ico" id="theme">
+    <i class="bx bxs-sun"></i>
   </div>
-    <!-- Scroll To Top Button  -->
-    <!-- Hero Section  -->
-    <section class="home">
-      <div class="hero-two-col">
-        <div class="left-hero">
-          <span>Imagine and create web apps beyond the web.</span>
-          <h1>Hi, I'm Rahul Valani.</h1>
-          <h2 id="demo"></h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            provident enim esse consectetur in voluptatibus accusamus! Similique
-            ab ullam blanditiis voluptatibus fugiat placeat est! Voluptatum rerum
-            veritatis ullam rem laborum.
-          </p>
-          <div class="btn-holder">
-            <button>Discover the Possibilities</button>
-            <button>Connect</button>
-          </div>
-        </div>
-        <div class="right-hero">
-          <img src="/assets/images/5.png" alt="SLow Interent" />
-        </div>
-      </div>
-      <img src="/assets/images/2.png" alt="Slow Interent" class="tiny" />
-      <img src="/assets/images/3.png" alt="Slow Interent" class="tiny1" />
-      <img src="/assets/images/4.png" alt="Slow Interent" class="tiny2" />
-      <img src="/assets/images/6.png" alt="Slow Interent" class="tiny3" />
-      <img src="/assets/images/7.png" alt="Slow Interent" class="tiny4" />
-    </section>
-    <div class="section-change"></div>
-    <!-- Hero Section  -->
-    <!-- Review Section  -->
-    <section class="reviews-section">
-      <span class="chip">Worked With</span>
-      <div class="clients">
-        <div><img src="/assets//images/twilio.svg" alt="twilio" /></div>
-        <div><img src="/assets//images/riot-games.svg" alt="riot-games" /></div>
-        <div><img src="/assets//images/unilever.svg" alt="unilever" /></div>
-        <div><img src="/assets//images/peloton.svg" alt="peloton" /></div>
-        <div><img src="/assets//images/mattel.svg" alt="mattel" /></div>
-        <div><img src="/assets//images/google.svg" alt="google" /></div>
-      </div>
-      <div class="two-col-review">
-        <div class="left-review">
-          <div class="image">
-            <img src="/assets//images/1.png" alt="Profile Image" />
-          </div>
-          <div class="text">
-            <h2>Rahul Valani</h2>
-            <p>HEAD OF ENGINEERING, TUNNELBEAR</p>
-          </div>
-        </div>
-        <div class="review">
-          <h1>
-            <blockquote class="attractive-blockquote">
-              <p>
-                ❝ We can launch websites and campaigns in minutes with no ops, a
-                goal that has often been a pipe dream in our industry. ❞
-              </p>
-            </blockquote>
-          </h1>
+  <!-- Toggle Theme  -->
+  <!-- Scroll To Top Button  -->
+  <div class="scroll-to-top" id="scrollToTop">
+    <i class='bx bxs-chevron-up'></i>
+  </div>
+  <!-- Scroll To Top Button  -->
+  <!-- Hero Section  -->
+  <section class="home">
+    <div class="hero-two-col">
+      <div class="left-hero">
+        <span>Imagine and create web apps beyond the web.</span>
+        <h1>Hi, I'm Rahul Valani.</h1>
+        <h2 id="demo"></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          provident enim esse consectetur in voluptatibus accusamus! Similique
+          ab ullam blanditiis voluptatibus fugiat placeat est! Voluptatum rerum
+          veritatis ullam rem laborum.
+        </p>
+        <div class="btn-holder">
+          <a href="#services"><button>Discover the Possibilities</button></a>
+          <a href="#contact"><button>Connect</button></a>
         </div>
       </div>
-    </section>
-    <!-- Review Section  -->
-    <!-- Services Section  -->
-    <section class="services">
-      <span class="chip"
-        >Custom Web Design & Development for Your Business</span
-      >
-      <h2 class="servicesh2">
-        Choose the Perfect Website Solution for Your Business
-      </h2>
-      <p class="servicesp">
-        Rahul Valani, a seasoned developer, offers tailored web solutions. With
-        expertise in PHP, SQL, and NoSQL, he crafts robust backends, while his
-        front-end skills cover AngularJS, ReactJS, and responsive design. Rahul
-        also excels in social integration and SEO optimization. Elevate your
-        online presence with Rahul's specialized web development.
-      </p>
-      <div class="threecol">
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/backend-icon.png" alt="Backend ICON" />
-          </div>
-          <h3>BACKEND DEVELOPMENT</h3>
-          <p>
-            Rahul Valani, the coding virtuoso, masters the art of PHP (5, 7)
-            with elegant object-oriented designs. Seamlessly transitioning
-            between SQL and NoSQL, he crafts databases that breathe life into
-            your ideas. With a commitment to Test-Driven Development, he ensures
-            robust and reliable code. Through the magic of MVC frameworks,
-            including Wordpress and Joomla, Rahul weaves functional wonders.
-            Embracing RESTful Web Services, he breaks boundaries, while Git,
-            SVN, and Amazon Web Services amplify his prowess. E-Commerce and
-            payment gateways become his playground, carving pathways to digital
-            triumph.
-          </p>
+      <div class="right-hero">
+        <img src="/assets/images/5.png" alt="SLow Interent" />
+      </div>
+    </div>
+    <img src="/assets/images/2.png" alt="Slow Interent" class="tiny" />
+    <img src="/assets/images/3.png" alt="Slow Interent" class="tiny1" />
+    <img src="/assets/images/4.png" alt="Slow Interent" class="tiny2" />
+    <img src="/assets/images/6.png" alt="Slow Interent" class="tiny3" />
+    <img src="/assets/images/7.png" alt="Slow Interent" class="tiny4" />
+  </section>
+  <div class="section-change"></div>
+  <!-- Hero Section  -->
+  <!-- Review Section  -->
+  <section class="reviews-section">
+    <span class="chip">Worked With</span>
+    <div class="clients">
+      <div><img src="/assets//images/twilio.svg" alt="twilio" /></div>
+      <div><img src="/assets//images/riot-games.svg" alt="riot-games" /></div>
+      <div><img src="/assets//images/unilever.svg" alt="unilever" /></div>
+      <div><img src="/assets//images/peloton.svg" alt="peloton" /></div>
+      <div><img src="/assets//images/mattel.svg" alt="mattel" /></div>
+      <div><img src="/assets//images/google.svg" alt="google" /></div>
+    </div>
+    <div class="two-col-review">
+      <div class="left-review">
+        <div class="image">
+          <img src="/assets//images/1.png" alt="Profile Image" />
         </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/frontend-icon.png" alt="front-end ICON" />
-          </div>
-          <h3>FRONT END DEVELOPMENT</h3>
-          <p>
-            Rahul Valani weaves digital wonders, merging Javascript's dynamic
-            realms - AngularJS and ReactJS - to breathe life into websites.
-            HTML5 forms his canvas, while CSS3 (enhanced by LESS & SASS) paints
-            stylish visuals. Rahul's SEO magic ensures visibility, while Gulp,
-            Grunt, Bower, and NPM conjure seamless development. He conducts
-            symphonies of responsive design, uniting desktop and mobile, with
-            cross-browser grace. Ajax, JSON, and XML empower interactions, while
-            Photoshop's artistry adds enchantment.
-          </p>
-        </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/social-icon.png" alt="social ICON" />
-          </div>
-          <h3>SOCIAL MEDIA</h3>
-          <p>
-            Rahul Valani orchestrates digital harmonies, forging
-            Authentication's secure key. Real-time updates pulse through his
-            creations. Twitter, LinkedIn, and Instagram APIs infuse his designs
-            with social magic. Fan pages thrive, while seamless sharing sparks
-            connections. SEO Optimization elevates visibility, while Google
-            Analytics paints insightful portraits. Email Marketing becomes a
-            captivating melody in his symphony of services.
-          </p>
+        <div class="text">
+          <h2>Rahul Valani</h2>
+          <p>HEAD OF ENGINEERING, TUNNELBEAR</p>
         </div>
       </div>
-      <button>Custom Services</button>
-    </section>
-    <!-- Services Section  -->
-   <!-- Portfolio Section  -->
-   <section class="portfolio">
+      <div class="review">
+        <h1>
+          <blockquote class="attractive-blockquote">
+            <p>
+              ❝ We can launch websites and campaigns in minutes with no ops, a
+              goal that has often been a pipe dream in our industry. ❞
+            </p>
+          </blockquote>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- Review Section  -->
+  <!-- Services Section  -->
+  <section class="services" id="services">
+    <span class="chip">Custom Web Design & Development for Your Business</span>
+    <h2 class="servicesh2">
+      Choose the Perfect Website Solution for Your Business
+    </h2>
+    <p class="servicesp">
+      Rahul Valani, a seasoned developer, offers tailored web solutions. With
+      expertise in PHP, SQL, and NoSQL, he crafts robust backends, while his
+      front-end skills cover AngularJS, ReactJS, and responsive design. Rahul
+      also excels in social integration and SEO optimization. Elevate your
+      online presence with Rahul's specialized web development.
+    </p>
+    <div class="threecol">
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/backend-icon.png" alt="Backend ICON" />
+        </div>
+        <h3>BACKEND DEVELOPMENT</h3>
+        <p>
+          Rahul Valani, the coding virtuoso, masters the art of PHP (5, 7)
+          with elegant object-oriented designs. Seamlessly transitioning
+          between SQL and NoSQL, he crafts databases that breathe life into
+          your ideas. With a commitment to Test-Driven Development, he ensures
+          robust and reliable code. Through the magic of MVC frameworks,
+          including Wordpress and Joomla, Rahul weaves functional wonders.
+          Embracing RESTful Web Services, he breaks boundaries, while Git,
+          SVN, and Amazon Web Services amplify his prowess. E-Commerce and
+          payment gateways become his playground, carving pathways to digital
+          triumph.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/frontend-icon.png" alt="front-end ICON" />
+        </div>
+        <h3>FRONT END DEVELOPMENT</h3>
+        <p>
+          Rahul Valani weaves digital wonders, merging Javascript's dynamic
+          realms - AngularJS and ReactJS - to breathe life into websites.
+          HTML5 forms his canvas, while CSS3 (enhanced by LESS & SASS) paints
+          stylish visuals. Rahul's SEO magic ensures visibility, while Gulp,
+          Grunt, Bower, and NPM conjure seamless development. He conducts
+          symphonies of responsive design, uniting desktop and mobile, with
+          cross-browser grace. Ajax, JSON, and XML empower interactions, while
+          Photoshop's artistry adds enchantment.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/social-icon.png" alt="social ICON" />
+        </div>
+        <h3>SOCIAL MEDIA</h3>
+        <p>
+          Rahul Valani orchestrates digital harmonies, forging
+          Authentication's secure key. Real-time updates pulse through his
+          creations. Twitter, LinkedIn, and Instagram APIs infuse his designs
+          with social magic. Fan pages thrive, while seamless sharing sparks
+          connections. SEO Optimization elevates visibility, while Google
+          Analytics paints insightful portraits. Email Marketing becomes a
+          captivating melody in his symphony of services.
+        </p>
+      </div>
+    </div>
+    <a href="mailto:contact@rahulvalani.com"><button>Custom Services</button></a>
+  </section>
+  <!-- Services Section  -->
+  <!-- Portfolio Section  -->
+  <section class="portfolio" id="portfolio">
     <h1>All part of one amazing workflow.</h1>
     <div class="timeline">
       <div class="left-content-timeline">
@@ -203,17 +193,34 @@
             <h2>Times of India</h2>
           </div>
           <p>
-            The "Times of India" project stands as a testament to innovation, brought to life in the form of a desktop web application. Envisioned and crafted in 2017, this digital marvel embodies the synergy of cutting-edge technologies. It showcases the mastery of REACTJS, which breathes dynamic life into every interaction, harmoniously entwined with the elegance of SASS for captivating styles. JQUERY's prowess adds finesse to the fabric of this creation. At its heart, front-end development reigns supreme, orchestrating an impeccable symphony of user experiences. Unveiling the core functionality, an automated news feed unfurls, delivering the latest updates seamlessly. In the world of digital realms, "Times of India" remains a shining beacon of creativity and technical prowess.
+            The "Times of India" project stands as a testament to innovation, brought to life in the form of a desktop
+            web application. Envisioned and crafted in 2017, this digital marvel embodies the synergy of cutting-edge
+            technologies. It showcases the mastery of REACTJS, which breathes dynamic life into every interaction,
+            harmoniously entwined with the elegance of SASS for captivating styles. JQUERY's prowess adds finesse to the
+            fabric of this creation. At its heart, front-end development reigns supreme, orchestrating an impeccable
+            symphony of user experiences. Unveiling the core functionality, an automated news feed unfurls, delivering
+            the latest updates seamlessly. In the world of digital realms, "Times of India" remains a shining beacon of
+            creativity and technical prowess.
+            <br> <br>
+            <a href="https://timesofindia.indiatimes.com/">Visit here</a>
           </p>
-          </div>
-        <div class="timeline-card" data-image-src="/assets/images/project2.jpeg">
-        <div class="timeline-icon">
-          <i class='bx bx-radio-circle-marked'></i>
-          <h2>Cambay Consulting project</h2>
         </div>
-        <p>
-          Embarking on the visionary project of Cambay Consulting in 2016, we embarked on a journey to seamlessly blend digital experiences across desktops, mobile devices, and iPads. Through the mastery of technologies like AngularJS, jQuery, and UID3JS, we sculpted an unparalleled User Interface (UI) that transcended conventions. Guided by the very essence of UI development, we meticulously shaped each pixel to harmonize with client aspirations. Our canvas was painted with client requirements, capturing the spirit of a dynamic web application. Cambay Consulting stands as a testament to our commitment to craft digital landscapes that resonate with both form and function.
-        </p>
+        <div class="timeline-card" data-image-src="/assets/images/project2.jpeg">
+          <div class="timeline-icon">
+            <i class='bx bx-radio-circle-marked'></i>
+            <h2>Cambay Consulting project</h2>
+          </div>
+          <p>
+            Embarking on the visionary project of Cambay Consulting in 2016, we embarked on a journey to seamlessly
+            blend digital experiences across desktops, mobile devices, and iPads. Through the mastery of technologies
+            like AngularJS, jQuery, and UID3JS, we sculpted an unparalleled User Interface (UI) that transcended
+            conventions. Guided by the very essence of UI development, we meticulously shaped each pixel to harmonize
+            with client aspirations. Our canvas was painted with client requirements, capturing the spirit of a dynamic
+            web application. Cambay Consulting stands as a testament to our commitment to craft digital landscapes that
+            resonate with both form and function.
+            <br> <br>
+            <a href="http://www.cambaycs.com/" target="_blank" rel="noopener noreferrer">Visit here</a>
+          </p>
         </div>
         <div class="timeline-card" data-image-src="/assets/images/project3.jpeg">
           <div class="timeline-icon">
@@ -221,124 +228,178 @@
             <h2>Najmuddin Meghani Advocate</h2>
           </div>
           <p>
-            Embarking on the transformative journey of Najmuddin Meghani Advocate's digital presence in 2016, we forged a harmonious blend of innovation and functionality across desktop, mobile, and iPad platforms. Harnessing the dynamic prowess of JavaScript and the finesse of jQuery, we orchestrated an enchanting symphony of interactivity that engaged visitors on multiple fronts. Our skilled touch extended to the realm of aesthetics, where the canvas of UI/UX design was brought to life through thoughtful strokes in Photoshop. The result? 
+            Embarking on the transformative journey of Najmuddin Meghani Advocate's digital presence in 2016, we forged
+            a harmonious blend of innovation and functionality across desktop, mobile, and iPad platforms. Harnessing
+            the dynamic prowess of JavaScript and the finesse of jQuery, we orchestrated an enchanting symphony of
+            interactivity that engaged visitors on multiple fronts. Our skilled touch extended to the realm of
+            aesthetics, where the canvas of UI/UX design was brought to life through thoughtful strokes in Photoshop.
+            The result?
             <br> <br> <br> <br>
-            A seamless fusion of art and technology that defined the essence of full-stack development. Our commitment didn't stop at functionality; it embraced every pixel of the user experience. With responsive design as our guiding star, we ensured a captivating journey, regardless of the device's dimensions. In the realm of digital landscapes, Najmuddin Meghani Advocate's project stands as a testament to our dedication to crafting immersive, harmonious, and responsive digital experiences.
+            A seamless fusion of art and technology that defined the essence of full-stack development. Our commitment
+            didn't stop at functionality; it embraced every pixel of the user experience. With responsive design as our
+            guiding star, we ensured a captivating journey, regardless of the device's dimensions. In the realm of
+            digital landscapes, Najmuddin Meghani Advocate's project stands as a testament to our dedication to crafting
+            immersive, harmonious, and responsive digital experiences.
           </p>
+        </div>
+        <div class="timeline-card" data-image-src="/assets/images/project4.jpeg">
+          <div class="timeline-icon">
+            <i class='bx bx-radio-circle-marked'></i>
+            <h2>Rainbow Club Resort</h2>
           </div>
-          <div class="timeline-card" data-image-src="/assets/images/project4.jpeg">
-            <div class="timeline-icon">
-              <i class='bx bx-radio-circle-marked'></i>
-              <h2>Rainbow Club Resort</h2>
-            </div>
-            <p>
-              Introducing the captivating Rainbow Club Resort project, a testament to innovation and seamless user experience. This visionary venture, spanning across desktop, mobile, and iPad platforms in the year 2015, exquisitely showcases the fusion of cutting-edge technologies. Harnessing the prowess of JavaScript, HTML5, and CSS3, the resort's digital haven comes to life with an enchanting interplay of design elements and interactive features. The project's exquisite front-end development crafts a virtual realm that engages and delights, where UI/UX design is an art form in itself. As the sun sets over technology's horizon, responsive design elegantly weaves its threads, ensuring that the Rainbow Club Resort experience resonates flawlessly across all screens and devices. This is more than a project – it's a symphony of digital craftsmanship and visual elegance.
-            </p>
-            </div>
+          <p>
+            Introducing the captivating Rainbow Club Resort project, a testament to innovation and seamless user
+            experience. This visionary venture, spanning across desktop, mobile, and iPad platforms in the year 2015,
+            exquisitely showcases the fusion of cutting-edge technologies. Harnessing the prowess of JavaScript, HTML5,
+            and CSS3, the resort's digital haven comes to life with an enchanting interplay of design elements and
+            interactive features. The project's exquisite front-end development crafts a virtual realm that engages and
+            delights, where UI/UX design is an art form in itself. As the sun sets over technology's horizon, responsive
+            design elegantly weaves its threads, ensuring that the Rainbow Club Resort experience resonates flawlessly
+            across all screens and devices. This is more than a project – it's a symphony of digital craftsmanship and
+            visual elegance.
+            <br> <br>
+            <a href="http://rainbowclubresort.com/web/" target="_blank" rel="noopener noreferrer">Visit here</a>
+          </p>
+        </div>
       </div>
       <div class="right-content-timeline" id='timeline-header'>
         <img id="projectImage" src="/assets/images/project1.jpeg" alt="Project Image">
       </div>
     </div>
   </section>
-  <section class="cv">
-      <div class="downloads-cv">
+  <!-- Portfolio Section  -->
+  <!-- CV Section  -->
+  <section class="cv" id="about">
+    <div class="downloads-cv">
+      <a href="/assets/files/Rahul_cv.pdf" download data-tilt data-tilt-max="10" data-tilt-speed="400"
+        data-tilt-perspective="1000">
         <div class="ico-cv" title="Download In PDF Format">
           <i class='bx bxs-file-pdf'></i>
         </div>
+      </a>
+      <a href="/assets/files/Rahul_cv.docx" download data-tilt data-tilt-max="10" data-tilt-speed="400"
+        data-tilt-perspective="1000">
         <div class="ico-cv" title="Download In DOCS Format">
-          <i class='bx bxs-file-doc' ></i>
+          <i class='bx bxs-file-doc'></i>
         </div>
-      </div>
-      <div class="cv-contents">
-        <h1>Resume</h1>
-        <div class="accordion">
-          <div class="accordion-item">
-            <input type="checkbox" id="section1">
-            <label for="section1" class="accordion-title"><span>SUMMARY</span> <i class='bx bx-chevron-down'></i></label>
-            <div class="accordion-content">
-              <p>With over 7 years of professional web development experience, I possess a robust skill set, exemplary work ethic, and a discerning design perspective. My expertise lies in fullstack web application development, leveraging technologies like Angular (1.x-2), React, PHP, MySQL, and HTML/CSS. I excel in collaborative team environments, contributing to large-scale websites that prioritize efficient, testable, and reusable code.</p>
-            </div>
+      </a>
+    </div>
+    <div class="cv-contents">
+      <h1>Resume</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section1">
+          <label for="section1" class="accordion-title"><span>SUMMARY</span> <i class='bx bx-chevron-down'></i></label>
+          <div class="accordion-content">
+            <p>With over 7 years of professional web development experience, I possess a robust skill set, exemplary
+              work ethic, and a discerning design perspective. My expertise lies in fullstack web application
+              development, leveraging technologies like Angular (1.x-2), React, PHP, MySQL, and HTML/CSS. I excel in
+              collaborative team environments, contributing to large-scale websites that prioritize efficient, testable,
+              and reusable code.</p>
           </div>
-          <div class="accordion-item">
-            <input type="checkbox" id="section2">
-            <label for="section2" class="accordion-title"><span>SKILLS</span> <i class='bx bx-chevron-down'></i></label>
-            <div class="accordion-content">
-              <p>
-                <p>It’s not just about the code. I understand the challenges of working remotely on client projects. Here are a few things I excel at:</p>
-                <br>
-                <ul>
-                    <li><strong>Communication:</strong> I prioritize effective communication, utilizing tools like Slack and Flock to maintain seamless collaboration and understanding.</li>
-                    <br>
-                    <li><strong>Organization:</strong> I value organization while working remotely. I leverage tools such as JIRA, Trello, and Team Foundation to ensure project progression. Git and Bitbucket are my go-to platforms for version control.</li>
-                    <br>
-                    <li><strong>Time Management:</strong> I respect your time and work diligently to maximize efficiency. I meticulously track tasks with services like Toggl, ensuring a streamlined workflow.</li>
-                    <br>
-                    <li><strong>Project Management:</strong> Embracing the Agile methodology, I break down projects into distinct phases and adhere to a structured timeline for seamless progression.</li>
-                    <br>
-                    <li><strong>Collaboration:</strong> As a team player, I seamlessly integrate into your existing team, contributing towards accomplishing project goals.</li>
-                    <br>
-                    <li><strong>Development:</strong> With a master's degree in computer science, I bring an informed approach to software development techniques, seamlessly applying them to web projects.</li>
-                    <br>
-                    <li><strong>Design:</strong> While not a graphic designer, I possess an eye for appealing design. I adeptly utilize Photoshop and Illustrator, translating mock-ups into tangible implementations.</li>
-                    <br>
-                    <li><strong>Documentation:</strong> I recognize the significance of clear documentation. Leaving clients with comprehensive insights into completed work aids in smooth transitions to the next development phase.</li>
-                </ul>
+        </div>
+        <div class="accordion-item">
+          <input type="checkbox" id="section2">
+          <label for="section2" class="accordion-title"><span>SKILLS</span> <i class='bx bx-chevron-down'></i></label>
+          <div class="accordion-content">
+            <p>
+            <p>It’s not just about the code. I understand the challenges of working remotely on client projects. Here
+              are a few things I excel at:</p>
+            <br>
+            <ul>
+              <li><strong>Communication:</strong> I prioritize effective communication, utilizing tools like Slack and
+                Flock to maintain seamless collaboration and understanding.</li>
+              <br>
+              <li><strong>Organization:</strong> I value organization while working remotely. I leverage tools such as
+                JIRA, Trello, and Team Foundation to ensure project progression. Git and Bitbucket are my go-to
+                platforms for version control.</li>
+              <br>
+              <li><strong>Time Management:</strong> I respect your time and work diligently to maximize efficiency. I
+                meticulously track tasks with services like Toggl, ensuring a streamlined workflow.</li>
+              <br>
+              <li><strong>Project Management:</strong> Embracing the Agile methodology, I break down projects into
+                distinct phases and adhere to a structured timeline for seamless progression.</li>
+              <br>
+              <li><strong>Collaboration:</strong> As a team player, I seamlessly integrate into your existing team,
+                contributing towards accomplishing project goals.</li>
+              <br>
+              <li><strong>Development:</strong> With a master's degree in computer science, I bring an informed approach
+                to software development techniques, seamlessly applying them to web projects.</li>
+              <br>
+              <li><strong>Design:</strong> While not a graphic designer, I possess an eye for appealing design. I
+                adeptly utilize Photoshop and Illustrator, translating mock-ups into tangible implementations.</li>
+              <br>
+              <li><strong>Documentation:</strong> I recognize the significance of clear documentation. Leaving clients
+                with comprehensive insights into completed work aids in smooth transitions to the next development
+                phase.</li>
+            </ul>
             </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <input type="checkbox" id="section3">
+          <label for="section3" class="accordion-title"><span>EMPLOYMENT HISTORY</span> <i
+              class='bx bx-chevron-down'></i></label>
+          <div class="accordion-content">
+            <div class="two-col-employment">
+              <div class="job">
+                <h2>UNIVERSAL COIN & BULLION - Full-Stack Developer</h2>
+                <span>July 2016 - Current</span>
+                <p>Managed websites, developed in-house applications, and contributed to social marketing efforts.
+                  Created PHP scripts and APIs for live product feeds, business reporting, and E-commerce enhancements.
+                  Utilized ReactJS for dynamic interfaces.</p>
+              </div>
+              <div class="job">
+                <h2>CAMBAY CONSULTING - Front End Developer</h2>
+                <span>Feb 2016 - July 2016</span>
+                <p>Contributed to the creation of a railway system using Angular 1.5, D3, and Karma. Collaborated with
+                  cross-functional teams to build a comprehensive CMS supporting web and mobile applications.</p>
+              </div>
+              <div class="job">
+                <h2>SOFTLOOPER SOLUTIONS - UI Developer</h2>
+                <span>July 2012 - Jan 2014</span>
+                <p>Designed a custom application for an Accountant Firm, integrated third-party APIs, and ensured
+                  responsive design. Utilized Angular UI Router, Gulp, and Wordpress for automation and data entry.</p>
+              </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <input type="checkbox" id="section3">
-            <label for="section3" class="accordion-title"><span>EMPLOYMENT HISTORY</span> <i class='bx bx-chevron-down'></i></label>
-            <div class="accordion-content">
-              <div class="two-col-employment">
-                <div class="job">
-                  <h2>UNIVERSAL COIN & BULLION - Full-Stack Developer</h2>
-                  <span>July 2016 - Current</span>
-                  <p>Managed websites, developed in-house applications, and contributed to social marketing efforts. Created PHP scripts and APIs for live product feeds, business reporting, and E-commerce enhancements. Utilized ReactJS for dynamic interfaces.</p>
+        </div>
+        <div class="accordion-item">
+          <input type="checkbox" id="section4">
+          <label for="section4" class="accordion-title"><span>EDUCATION</span> <i
+              class='bx bx-chevron-down'></i></label>
+          <div class="accordion-content">
+            <div class="two-col-employment">
+              <div class="job">
+                <h3>LAMAR UNIVERSITY</h3>
+                <p>Masters of Computer Science with a minor in Game Development</p>
+                <span>2014 - 2015</span>
+                <p>Dean's Scholarship recipient</p>
               </div>
               <div class="job">
-                  <h2>CAMBAY CONSULTING - Front End Developer</h2>
-                  <span>Feb 2016 - July 2016</span>
-                  <p>Contributed to the creation of a railway system using Angular 1.5, D3, and Karma. Collaborated with cross-functional teams to build a comprehensive CMS supporting web and mobile applications.</p>
+                <h3>EAST POINT COLLEGE OF ENGG & TECH.</h3>
+                <p>Bachelors in Web Development</p>
+                <span>Assistant to Professor</span>
+                <p>2009 - 2013</p>
               </div>
               <div class="job">
-                  <h2>SOFTLOOPER SOLUTIONS - UI Developer</h2>
-                  <span>July 2012 - Jan 2014</span>
-                  <p>Designed a custom application for an Accountant Firm, integrated third-party APIs, and ensured responsive design. Utilized Angular UI Router, Gulp, and Wordpress for automation and data entry.</p>
-              </div>
+                <h3>C.C.SHAH HIGH SCHOOL</h3>
+                <span>Year 12 graduate</span>
+                <p>2009</p>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <input type="checkbox" id="section4">
-            <label for="section4" class="accordion-title"><span>EDUCATION</span> <i class='bx bx-chevron-down'></i></label>
-            <div class="accordion-content">
-              <div class="two-col-employment">
-                <div class="job">
-                  <h3>LAMAR UNIVERSITY</h3>
-                  <p>Masters of Computer Science with a minor in Game Development</p>
-                  <span>2014 - 2015</span>
-                  <p>Dean's Scholarship recipient</p>
-              </div>
+        </div>
+        <div class="accordion-item">
+          <input type="checkbox" id="section5">
+          <label for="section5" class="accordion-title"><span>Certificates</span> <i
+              class='bx bx-chevron-down'></i></label>
+          <div class="accordion-content">
+            <div class="two-col-employment">
               <div class="job">
-                  <h3>EAST POINT COLLEGE OF ENGG & TECH.</h3>
-                  <p>Bachelors in Web Development</p>
-                  <span>Assistant to Professor</span>
-                  <p>2009 - 2013</p>
-              </div>
-              <div class="job">
-                  <h3>C.C.SHAH HIGH SCHOOL</h3>
-                  <span>Year 12 graduate</span>
-                  <p>2009</p>
-              </div>
-              </div>
-              <h2 style="margin: 10px 0;">My Certificates</h2>
-              <div class="two-col-employment">
-                <div class="job">
-                  <h3>AWS CERTIFIED DEVELOPER - ASSOCIATE</h3>
-                  <img src="/assets/images/aws-certified-developer-associate.png" alt="aws-certified-developer-associate">
-                  <a href="#">Download & View Certificate</a>
+                <h3>AWS CERTIFIED DEVELOPER - ASSOCIATE</h3>
+                <img src="/assets/images/aws-certified-developer-associate.png" alt="aws-certified-developer-associate">
+                <a href="#">Download & View Certificate</a>
               </div>
               <div class="job">
                 <h3>GOOGLE FOUNDATIONS: DATA, DATA, EVERYWHERE</h3>
@@ -350,134 +411,156 @@
                 <img src="/assets/images/google-digital-garrage.png" alt="google-digital-garrage">
                 <a href="#">Download & View Certificate</a>
               </div>
-              </div>
             </div>
           </div>
         </div>
-        
       </div>
-  </section>
-   <!-- Portfolio Section  -->
-     <!-- Work Process Section  -->
-     <section class="services">
-      <span class="chip"
-        >How I Work?</span
-      >
-      <h2 class="servicesh2">
-        Cultivating Innovative Concepts
-      </h2>
-      <p class="servicesp">
-        Every project begins with a spark of imagination. Our dedicated team collaborates closely with you to understand your vision, goals, and objectives. We delve into the core of your idea, exploring possibilities and brainstorming innovative concepts that will form the foundation of your project.
-      </p>
-      <div class="threecol">
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/5.png" alt="ICON" />
-          </div>
-          <h3>Idea</h3>
-          <p>
-            Every project begins with a spark of imagination. Our dedicated team collaborates closely with you to understand your vision, goals, and objectives. We delve into the core of your idea, exploring possibilities and brainstorming innovative concepts that will form the foundation of your project.
-          </p>
-        </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/concept.png" alt="ICON" />
-          </div>
-          <h3>Concept</h3>
-          <p>
-            Building upon the initial idea, we meticulously refine and shape the conceptual framework. Our experts strategize and map out the path from imagination to reality, considering design aesthetics, user experience, and functionality. We work hand in hand with you to ensure every detail aligns with your project's essence.
-          </p>
-        </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/Design.png" alt="ICON" />
-          </div>
-          <h3>Design</h3>
-          <p>
-            With a solid concept in place, our creative designers take the reins to craft captivating visual experiences. We pay meticulous attention to every pixel, designing interfaces that engage, inspire, and leave a lasting impact. The design phase marries aesthetics with functionality, ensuring your project's visual appeal resonates with your audience.
-          </p>
-        </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/Develop.png" alt="ICON" />
-          </div>
-          <h3>Develop</h3>
-          <p>
-            Armed with refined designs, our skilled developers embark on transforming concepts into functional reality. We employ cutting-edge technologies and coding practices to build a robust foundation that underpins your project's functionality. Our development process is collaborative, iterative, and driven by a commitment to excellence.
-          </p>
-        </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/Test.png" alt="ICON" />
-          </div>
-          <h3>Test</h3>
-          <p>
-            Before unveiling the final masterpiece, our quality assurance experts rigorously test every aspect of your project. From functionality and performance to responsiveness and user experience, we leave no stone unturned. Rigorous testing ensures that your project operates seamlessly across various platforms and devices.
-          </p>
-        </div>
-        <div class="card">
-          <div class="ico-card">
-            <img src="/assets/images/Launch.png" alt="ICON" />
-          </div>
-          <h3>Launch</h3>
-          <p>
-            The moment has arrived to unveil your project to the world. With thorough preparation and meticulous attention to detail, we orchestrate a seamless launch that showcases your project's brilliance. We stand by your side, ensuring a smooth transition from development to deployment and beyond.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Work Process Section  -->
-    <!-- contact section  -->
-    <section class="contact">
-      <div class="contact-two-col">
-        <div class="left-contact">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443090.69265221!2d-95.73094599494563!3d29.816768826189097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1692244273401!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="contact-profile">
-            <div class="contact-image">
-              <img src="/assets/images/1.png" alt="Rahul Valani">
-            </div>
-            <div class="contact-text">
-              Hello, I'm glad you're interested in contacting me. I'm Rahul Valani, a web developer and designer based in Houston, Texas. <br> <br>If you want to get in touch with me, you can use any of the following methods: <br>
 
-              <div class="three-col-contact-icons">
-                <div class="contact-ico" title="Reach Via Email">
-                  <i class='bx bxs-envelope'></i>
-                </div>
-                <div class="contact-ico" title="Reach Via LinkedIn">
-                  <i class='bx bxl-linkedin-square'></i>
-                </div>
-                <div class="contact-ico" title="Reach Via Call">
-                  <i class='bx bxs-phone-call' ></i>
-                </div>
-              </div>
-          </div>
-          </div>
+    </div>
+  </section>
+  <!-- CV Section  -->
+  <!-- Work Process Section  -->
+  <section class="services">
+    <span class="chip">How I Work?</span>
+    <h2 class="servicesh2">
+      Cultivating Innovative Concepts
+    </h2>
+    <p class="servicesp">
+      Every project begins with a spark of imagination. Our dedicated team collaborates closely with you to understand
+      your vision, goals, and objectives. We delve into the core of your idea, exploring possibilities and brainstorming
+      innovative concepts that will form the foundation of your project.
+    </p>
+    <div class="threecol">
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/5.png" alt="ICON" />
         </div>
-        <div class="right-contact">
-          <h1>Connect Via Networks</h1>
-          <p>I’m always open to new opportunities and collaborations, so feel free to reach out to me anytime. I look forward to hearing from you soon. Thank you for visiting my website. 😊</p>
-          <br>
-          <form>
-            <label for="Name">Name*</label>
-            <input type="text" name="Name" id="Name" placeholder="Enter Your Name" required>
-            <label for="Email">Email*</label>
-            <input type="email" name="Email" id="Email" placeholder="Enter You Email Address" required>
-            <label for="Message">Message*</label>
-            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Hello Rahul, I’m looking for a web developer..." required></textarea>
-            <button type="submit">Send</button>
-          </form>
+        <h3>Idea</h3>
+        <p>
+          Every project begins with a spark of imagination. Our dedicated team collaborates closely with you to
+          understand your vision, goals, and objectives. We delve into the core of your idea, exploring possibilities
+          and brainstorming innovative concepts that will form the foundation of your project.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/concept.png" alt="ICON" />
+        </div>
+        <h3>Concept</h3>
+        <p>
+          Building upon the initial idea, we meticulously refine and shape the conceptual framework. Our experts
+          strategize and map out the path from imagination to reality, considering design aesthetics, user experience,
+          and functionality. We work hand in hand with you to ensure every detail aligns with your project's essence.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/Design.png" alt="ICON" />
+        </div>
+        <h3>Design</h3>
+        <p>
+          With a solid concept in place, our creative designers take the reins to craft captivating visual experiences.
+          We pay meticulous attention to every pixel, designing interfaces that engage, inspire, and leave a lasting
+          impact. The design phase marries aesthetics with functionality, ensuring your project's visual appeal
+          resonates with your audience.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/Develop.png" alt="ICON" />
+        </div>
+        <h3>Develop</h3>
+        <p>
+          Armed with refined designs, our skilled developers embark on transforming concepts into functional reality. We
+          employ cutting-edge technologies and coding practices to build a robust foundation that underpins your
+          project's functionality. Our development process is collaborative, iterative, and driven by a commitment to
+          excellence.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/Test.png" alt="ICON" />
+        </div>
+        <h3>Test</h3>
+        <p>
+          Before unveiling the final masterpiece, our quality assurance experts rigorously test every aspect of your
+          project. From functionality and performance to responsiveness and user experience, we leave no stone unturned.
+          Rigorous testing ensures that your project operates seamlessly across various platforms and devices.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico-card">
+          <img src="/assets/images/Launch.png" alt="ICON" />
+        </div>
+        <h3>Launch</h3>
+        <p>
+          The moment has arrived to unveil your project to the world. With thorough preparation and meticulous attention
+          to detail, we orchestrate a seamless launch that showcases your project's brilliance. We stand by your side,
+          ensuring a smooth transition from development to deployment and beyond.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Work Process Section  -->
+  <!-- contact section  -->
+  <section class="contact" id="contact">
+    <div class="contact-two-col">
+      <div class="left-contact">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443090.69265221!2d-95.73094599494563!3d29.816768826189097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1692244273401!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-profile" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+          <div class="contact-image">
+            <img src="/assets/images/1.png" alt="Rahul Valani">
+          </div>
+          <div class="contact-text">
+            Hello, I'm glad you're interested in contacting me. I'm Rahul Valani, a web developer and designer based in
+            Houston, Texas. <br> <br>If you want to get in touch with me, you can use any of the following methods: <br>
+
+            <div class="three-col-contact-icons">
+              <div class="contact-ico" title="Reach Via Email">
+                <i class='bx bxs-envelope'></i>
+              </div>
+              <div class="contact-ico" title="Reach Via LinkedIn">
+                <i class='bx bxl-linkedin-square'></i>
+              </div>
+              <div class="contact-ico" title="Reach Via Call">
+                <i class='bx bxs-phone-call'></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- contact section  -->
-    <!-- Footer Section  -->
-    <footer>
-      <p>© <span id="year"></span> | Rahul Valani - This website is the exclusive property of the author from 2015 to <span id="year-next"></span>.</p>
-    </footer>
-    <!-- Footer Section  -->
-    <!-- JavaScripts imports  -->
-    <script src="/app.js"></script>
-    <script src="/libs/vanilla-tilt.js"></script>
-    <script src="/libs/vanilla-tilt.min.js"></script>
-  </body>
+      <div class="right-contact">
+        <h1>Connect Via Networks</h1>
+        <p>I’m always open to new opportunities and collaborations, so feel free to reach out to me anytime. I look
+          forward to hearing from you soon. Thank you for visiting my website. 😊</p>
+        <br>
+        <form>
+          <label for="Name">Name*</label>
+          <input type="text" name="Name" id="Name" placeholder="Enter Your Name" required>
+          <label for="Email">Email*</label>
+          <input type="email" name="Email" id="Email" placeholder="Enter You Email Address" required>
+          <label for="Message">Message*</label>
+          <textarea name="Message" id="Message" cols="30" rows="10"
+            placeholder="Hello Rahul, I’m looking for a web developer..." required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section  -->
+  <!-- Footer Section  -->
+  <footer>
+    <p>© <span id="year"></span> | Rahul Valani - This website is the exclusive property of the author from 2015 to
+      <span id="year-next"></span>.</p>
+  </footer>
+  <!-- Footer Section  -->
+  <!-- JavaScripts imports  -->
+  <script src="/app.js"></script>
+  <script src="/libs/vanilla-tilt.js"></script>
+  <script src="/libs/vanilla-tilt.min.js"></script>
+</body>
+
 </html>

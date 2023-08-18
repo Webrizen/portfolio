@@ -23,12 +23,10 @@ header{
 .dynamic-island a{
     padding: 10px;
     font-size: 15px;
-}
-.dark-theme .dynamic-island a{
-    color: #eee;
+    color: gold;
 }
 .dynamic-island a:hover{
-    color: #eeeeeec1;
+    color: goldenrod;
 }
 @media (max-width: 768px) {
     header{
@@ -46,6 +44,8 @@ header{
         white-space: normal;
         padding: 10px 20px;
         overflow: hidden;
+        width: min-content;
+        backdrop-filter: blur(10px);
     }
     .dynamic-island a{
         padding: 5px;

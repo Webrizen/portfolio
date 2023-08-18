@@ -73,32 +73,45 @@
 .right-content-timeline {
     width: 50%;
     position: relative;
-    margin-top: 150px;
+    padding-top: 150px;
+    transition: top 0.00ms ease-in !important;
 }
 
 .right-content-timeline img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
     border-radius: 10px;
+    transition: opacity 0.5s ease-in-out !important;
 }
 
 .cv {
     display: grid;
     grid-template-columns: 1fr 80%;
     width: 80vw;
-    gap: 10px;
+    gap: 20px;
     min-height: 100vh;
     padding: 100px 0;
     margin: 10px auto;
 }
 
+.cv a{
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
 .downloads-cv {
     width: 100%;
-    height: 100%;
+    height: min-content;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -106,7 +119,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 200px;
     border-radius: 10px;
     border: 0.1px solid rgba(192, 192, 192, 0.504);
@@ -126,7 +139,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .cv-contents h1:nth-child(1) {
@@ -228,6 +241,12 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
 
     .timeline {
         flex-direction: row;
+        background: url(/assets/videos/timeline-walkthroght.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #f1f1f1 !important;
+        border-radius: 10px;
     }
 
     .left-content-timeline{

@@ -60,7 +60,7 @@ const themeIcon = document.getElementById("theme");
     document.addEventListener("DOMContentLoaded", function () {
       const timelineCards = document.querySelectorAll(".timeline-card");
       const projectImage = document.getElementById("projectImage");
-  
+    
       const observerOptions = {
           root: null,
           rootMargin: "0px",
@@ -73,7 +73,11 @@ const themeIcon = document.getElementById("theme");
               if (entry.isIntersecting) {
                   const newImageSrc = card.getAttribute("data-image-src");
                   if (newImageSrc) {
-                      projectImage.src = newImageSrc;
+                      projectImage.style.opacity = "0"; // Fade out the image
+                      setTimeout(() => {
+                          projectImage.src = newImageSrc;
+                          projectImage.style.opacity = "1"; // Fade in the new image
+                      }, 300); // Delay in milliseconds for smooth animation
                   }
                   const icon = card.querySelector(".timeline-icon i");
                   if (icon) {
@@ -91,7 +95,7 @@ const themeIcon = document.getElementById("theme");
       timelineCards.forEach(card => {
           observer.observe(card);
       });
-  });
+  });  
   
 
   document.getElementById('year').innerHTML = new Date().getFullYear();

@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: url(/assets//images//background-hero.png);
+    background: url(/assets/videos/hero-bg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,11 +12,11 @@
     color: #f1f1f1f1;
     position: relative;
     opacity: 0;
-  transform: translateY(-20px);
-  animation: fadeInDown 1s forwards;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s forwards;
 }
 
-.hero-two-col{
+.hero-two-col {
     width: 80vw;
     margin: 0 auto !important;
     display: grid;
@@ -85,6 +85,7 @@
 }
 
 .right-hero img {
+    width: 90%;
     object-fit: cover;
     animation: AnimateUpandDown 5s ease-in-out infinite;
     filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.4));
@@ -148,11 +149,12 @@
 
 .section-change {
     position: relative;
-  width: 100%;
-  height: 200px; /* Adjust the height as needed */
-  background: linear-gradient(to bottom, #020be8, rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px); /* Add blur effect */
-  z-index: -1; /* Place behind the content */
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transform: translateY(-20px);
 }
 
 @media (max-width: 768px) {

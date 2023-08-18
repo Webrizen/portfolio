@@ -174,10 +174,9 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 768px) {
   .ico {
-    left: 0;
-    right: 0;
+    right: 10px;
     top: auto;
-    bottom: 0;
+    bottom: 6%;
     margin: 10px auto;
   }
   .cursor-circle{
