@@ -31,20 +31,17 @@
 
 .timeline {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     margin-top: 20px;
-    overflow-x: auto;
-  overflow-y: hidden;
-  position: relative;
 }
 
 .left-content-timeline {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -71,9 +68,10 @@
 }
 
 .right-content-timeline {
-    width: 50%;
-    position: relative;
-    padding-top: 150px;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10%;
     transition: top 0.00ms ease-in !important;
 }
 
@@ -82,6 +80,9 @@
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30%;
     transition: opacity 0.5s ease-in-out !important;
 }
 
@@ -95,7 +96,7 @@
     margin: 10px auto;
 }
 
-.cv a{
+.cv a {
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -113,6 +114,9 @@
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10%;
 }
 
 .downloads-cv .ico-cv {
@@ -229,6 +233,10 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
     color: silver;
 }
 
+.mobile-timeline{
+    display: none;
+}
+
 @media (max-width: 768px) {
     .portfolio {
         width: 100%;
@@ -240,36 +248,9 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
         font-size: 2rem;
         text-align: center;
     }
-
-    .timeline {
-        flex-direction: row;
-        background: url(/assets/videos/timeline-walkthroght.gif);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #f1f1f1 !important;
-        border-radius: 10px;
-    }
-
-    .left-content-timeline{
-        width: 100%;
-    }
-
-    .left-content-timeline .timeline-card {
-        background: rgba(225, 225, 225, 0.1);
-        padding: 15px;
-        border-radius: 10px;
-        border: 0.1px solid rgba(192, 192, 192, 0.504);
-    }
-
-    .timeline-icon i {
+    .timeline{
         display: none;
     }
-
-    .right-content-timeline {
-        display: none;
-    }
-
     .cv {
         display: flex;
         flex-direction: column;
@@ -277,8 +258,32 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
         width: 100%;
         padding: 10px;
     }
+    .downloads-cv {
+        position: relative;
+        top: auto;
+    }
 
     .two-col-employment {
         grid-template-columns: 1fr;
+    }
+    .mobile-timeline{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .mobile-timeline-card{
+        border-radius: 10px;
+    border: 0.1px solid rgba(192, 192, 192, 0.504);
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+    padding: 20px;
+    }
+    .mobile-timeline-card img{
+        width: 100%;
+        border-radius: 10px;
+        height: 200px;
+        object-fit: cover;
     }
 }

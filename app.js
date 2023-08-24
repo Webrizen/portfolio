@@ -101,21 +101,6 @@ const themeIcon = document.getElementById("theme");
   document.getElementById('year').innerHTML = new Date().getFullYear();
   document.getElementById('year-next').innerHTML = new Date().getFullYear();
 
-  document.addEventListener("scroll", onScroll);
-
-const timelineHeader = document.getElementById('timeline-header');
-const timelineHeaderRect = timelineHeader.getBoundingClientRect();
-
-function onScroll(){
-	const timelineHeaderTop = timelineHeaderRect.top - window.pageYOffset;
-	  
-  if(timelineHeaderTop < 0){
-    timelineHeader.style.top = `${-timelineHeaderTop}px`;
-  }else{
-    timelineHeader.style.top = 0;
-  }
-}
-
 const scrollToTopBtn = document.getElementById("scrollToTop");
 
 window.addEventListener("scroll", () => {
