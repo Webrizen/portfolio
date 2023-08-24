@@ -24,10 +24,6 @@ header{
 .dynamic-island a{
     padding: 10px;
     font-size: 15px;
-    color: gold;
-}
-.dynamic-island a:hover{
-    color: goldenrod;
 }
 @media (max-width: 768px) {
     header{
