@@ -181,7 +181,15 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 820px) {
+    .threecol{
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
         height: auto;
@@ -226,3 +234,4 @@
         justify-content: center;
     }
 }
+

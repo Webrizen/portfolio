@@ -96,8 +96,16 @@
     border: 0.1px solid rgba(192, 192, 192, 0.504);
     border-radius: 4px;
 }
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 820px) {
+    .contact-two-col{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .left-contact iframe{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
     .contact-two-col{
         width: 100%;
         display: flex;
@@ -117,3 +125,4 @@
         margin: 0 auto;
     }
 }
+

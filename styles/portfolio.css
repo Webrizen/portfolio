@@ -236,8 +236,19 @@ input[type="checkbox"]:checked+.accordion-title+.accordion-content {
 .mobile-timeline{
     display: none;
 }
+@media only screen and (max-width: 820px) {
+    .portfolio{
+        width: 95%;
+    }
+    .cv{
+        min-height: auto;
+    }
+    .two-col-employment{
+        grid-template-columns: 1fr;
+    }
+}
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .portfolio {
         width: 100%;
         padding: 10px;

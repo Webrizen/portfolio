@@ -53,12 +53,6 @@
   }
 }
 
-/* html,
-body {
-  width: 100vw;
-  overflow-x: hidden;
-} */
-
 /* Light Theme Styles */
 .light-theme {
   background: #f1f1f1;
@@ -190,10 +184,11 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     left: 0;
     top: auto;
-    bottom: 2%;
+    bottom: 0;
     margin: 10px auto;
   }
   .cursor-circle{
     display: none;
   }
 }
+@media only screen and (max-width: 820px) {}
