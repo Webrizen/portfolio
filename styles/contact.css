@@ -6,7 +6,7 @@
     align-items: center;
 }
 .contact-two-col{
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto !important;
     display: grid;
     grid-template-columns: 1fr 1fr;

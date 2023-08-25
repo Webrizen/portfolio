@@ -1,5 +1,5 @@
 .portfolio {
-    width: 80vw;
+    width: 60vw;
     height: auto;
     border-left: 0.5px solid rgba(192, 192, 192, 0.504);
     margin: 10px auto;
@@ -89,7 +89,7 @@
 .cv {
     display: grid;
     grid-template-columns: 1fr 80%;
-    width: 80vw;
+    width: 60vw;
     gap: 20px;
     min-height: 100vh;
     padding: 100px 0;
