@@ -24,6 +24,10 @@ header{
 .dynamic-island a{
     padding: 10px;
     font-size: 15px;
+    color: gold;
+}
+.dark-theme .dynamic-island a{
+    color: #f1f1f1f1;
 }
 @media only screen and (max-width: 768px) {
     header{

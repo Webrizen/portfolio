@@ -62,6 +62,11 @@
     padding: 40px;
 }
 
+.right-hero img{
+    border-radius: 50%;
+    mix-blend-mode: screen;
+}
+
 .btn-holder {
     display: flex;
     flex-direction: row;
